@@ -14,9 +14,7 @@ use App\Http\Controllers\JobController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+
 
 Route::get('/',[JobController::class,'index']);
 Route::post('/',[JobController::class,'create']);
